@@ -1,0 +1,359 @@
+html, body {
+    background-color: rgb(232, 169, 52);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+* {
+    box-sizing: inherit; /* 全要素にボックスモデルを適用 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 100px; /* ヘッダーの高さに合わせてコンテンツを下げる */
+}
+
+/* フォント変更 */
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+/* ヘッダーデザイン */
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(150, 127, 255, 0.721);
+    align-items: center;
+    position: fixed;
+    top: 0; /* ヘッダーを最上部に固定 */
+    z-index: 1000; /* 他の要素よりも前面に表示 */
+}
+h1{
+  text-align: center;
+  bottom: -100px; /* 下からの距離 */
+}
+.box1{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(115, 229, 229);
+  width: 700px;
+  height: 230px;
+
+    bottom: -150px; /* 下からの距離 */
+    left: 380px; /* 左からの距離 */
+    padding: 10px; /* 内側の余白 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}.box2{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(115, 229, 229);
+  width: 700px;
+  height: 230px;
+
+    bottom: -150px; /* 下からの距離 */
+    left: 380px; /* 左からの距離 */
+    padding: 10px; /* 内側の余白 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+.box3{
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(115, 229, 229);
+  width: 700px;
+  height: 230px;
+
+    bottom: -150px; /* 下からの距離 */
+    left: 380px; /* 左からの距離 */
+    padding: 10px; /* 内側の余白 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+.title {
+    margin-right: auto;
+    margin-left: 20px; /* 左側に余白を追加（適宜調整） */
+    font-size: 25px; /* 文字サイズを調整 */
+    
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+}
+a:hover{
+    color: black;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: rgb(24, 232, 255);
+  margin-right: 35px;
+  font-size: 15px;
+}
+/*左側のやつ*/
+
+#event-day{
+    font-size: 20px;
+}
+#event-location{
+    font-size: 20px;
+}
+#event-name{
+    font-size: 50px;
+}
+#event-slogan{
+    font-size: 20px;   
+}
+.event-info {text-align: center;
+    background-color: aliceblue;
+    bottom: 100px; /* 下からの距離 */
+    text-align: center;
+    width: 620px;
+    margin: 0 auto;
+    padding: 10px; /* 内側の余白 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+.event-info p {
+    margin: 5px 0; /* 上下のマージン */
+    color: white; /* 文字色 */
+
+}
+#font1{
+    font-weight:  400;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+#font2{
+    font-weight:  400;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+#font3{
+    font-weight:  700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+#font4{
+    font-weight:  400;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.wrapper{
+  height: 100%;
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+footer{
+  background-color: rgb(99, 34, 4);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+}
+.pagetop a {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+
+}
+.pagetop a:hover {
+  display: block;
+  text-align: center;
+
+  font-size: 12px;
+  text-decoration: none;
+  padding:5px 10px;
+  filter:alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.nev{
+  display: flex;
+  flex: 1;
+  flex-direction: row; /* ナビゲーション項目も横に並べる */
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.drawer_hidden {
+    display: none;
+  }
+  
+  @media screen and (max-width: 765px) {
+    /* ハンバーガーアイコンの設置スペース */
+   .drawer_open {
+     position: absolute;
+     right:  80px;
+     top: 20px;
+     z-index: 100;
+     cursor: pointer;
+   }
+   
+   /* ハンバーガーメニューのアイコン */
+   .drawer_open span,
+   .drawer_open span:before,
+   .drawer_open span:after {
+     content: '';
+     display: block;
+     height: 3px;
+     width: 25px;
+     border-radius: 3px;
+     background: #333;
+     transition: 0.5s;
+     position: absolute;
+   }
+   
+   /* 三本線の一番上の棒の位置調整 */
+   .drawer_open span:before {
+     bottom: 10px;
+   }
+   
+   /* 三本線の一番下の棒の位置調整 */
+   .drawer_open span:after {
+     top: 8px;
+   }
+   
+   /* アイコンがクリックされたら真ん中の線を透明にする */
+   #drawer_input:checked ~ .drawer_open span {
+     background: rgba(255, 255, 255, 0);
+   }
+   
+   /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+   #drawer_input:checked ~ .drawer_open span::before {
+     bottom: 0;
+     transform: rotate(45deg);
+   }
+   
+   #drawer_input:checked ~ .drawer_open span::after {
+     top: 0;
+     transform: rotate(-45deg);
+   }
+ 
+   .nav_content {
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0%;
+     left: 100%; /* メニューを画面の外に飛ばす */
+     z-index: 99;
+     background: rgb(235, 189, 38);
+     transition: .5s;
+   
+     padding-top: 20px;
+   }
+   #li{
+    font-size: 200px;
+   }
+   /* アイコンがクリックされたらメニューを表示 */
+   #drawer_input:checked ~ .nav_content {
+     left: 0;
+   }
+     }
+
+     @media screen and (max-width: 375px) {
+      /* ハンバーガーアイコンの設置スペース */
+     .drawer_open {
+       position: absolute;
+       right:  80px;
+       top: 20px;
+       z-index: 100;
+       cursor: pointer;
+     }
+     
+     /* ハンバーガーメニューのアイコン */
+     .drawer_open span,
+     .drawer_open span:before,
+     .drawer_open span:after {
+       content: '';
+       display: block;
+       height: 3px;
+       width: 25px;
+       border-radius: 3px;
+       background: #333;
+       transition: 0.5s;
+       position: absolute;
+     }
+     
+     /* 三本線の一番上の棒の位置調整 */
+     .drawer_open span:before {
+       bottom: 10px;
+     }
+     
+     /* 三本線の一番下の棒の位置調整 */
+     .drawer_open span:after {
+       top: 8px;
+     }
+     
+     /* アイコンがクリックされたら真ん中の線を透明にする */
+     #drawer_input:checked ~ .drawer_open span {
+       background: rgba(255, 255, 255, 0);
+     }
+     
+     /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+     #drawer_input:checked ~ .drawer_open span::before {
+       bottom: 0;
+       transform: rotate(45deg);
+     }
+     
+     #drawer_input:checked ~ .drawer_open span::after {
+       top: 0;
+       transform: rotate(-45deg);
+     }
+   
+     .nav_content {
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       top: 0%;
+       left: 100%; /* メニューを画面の外に飛ばす */
+       z-index: 99;
+       background: rgb(195, 156, 27);
+       transition: .5s;
+       flex-direction:column;
+       padding-top: 20px;
+     }
+     #li{
+      font-size: 30px;
+     }
+     
+     /* アイコンがクリックされたらメニューを表示 */
+     #drawer_input:checked ~ .nav_content {
+       left: 0;
+     }
+     a{
+      display: block;
+      text-decoration: none;
+      color: rgb(116, 19, 177);
+      margin-right: 35px;
+      font-size: 100px;
+    }
+       }
